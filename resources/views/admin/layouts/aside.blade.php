@@ -75,7 +75,7 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a href="{{ route('majors.create') }}"
+                    <a href="{{ route('contact-us.index') }}"
                         class="nav-link {{ request()->is('majors/create') ? 'active' : '' }}">
                         <i class="nav-icon fas fa-th"></i>
                         <p>

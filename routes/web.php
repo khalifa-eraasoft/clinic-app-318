@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\Contact\ContactController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Admin\Home\HomeController;
@@ -43,6 +44,15 @@ Route::group([
 
     Route::resource('/majors', MajorController::class);
     Route::resource('/doctors', DoctorController::class);
+    Route::controller(ContactController::class)
+        ->group(function () {
+            Route::get('/contact-us', 'index')
+                ->name('contact-us.index');
+            Route::get('/contact-us/{contact}', 'show')
+                ->name('contact-us.show');
+            Route::post('/contact-us', 'store')
+                ->name('contact-us.store');
+        });
 });
 
 

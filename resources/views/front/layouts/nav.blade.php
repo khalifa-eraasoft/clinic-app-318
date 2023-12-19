@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-expand-md bg-blue sticky-top">
     <div class="container">
         <div class="navbar-brand">
-            <a class="fw-bold text-white m-0 text-decoration-none h3" href="./index.html">{{ auth()->user()->name }}</a>
+            <a class="fw-bold text-white m-0 text-decoration-none h3" href="./index.html">VCare</a>
         </div>
         <button class="navbar-toggler btn-outline-light border-0 shadow-none" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
